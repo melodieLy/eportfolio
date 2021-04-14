@@ -1,32 +1,18 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <span id="title">Mélodie Ly</span>
+        <div id="nav-link">
+          <router-link to="/">Accueil</router-link>
+          <router-link to="/skills">Compétences</router-link>
+          <router-link to="/projects">Réalisations</router-link>
+          <router-link to="/contact">Contact</router-link>
+        </div>
     </div>
     <router-view />
   </div>
 </template>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
+@import url('./assets/styles.css');
 </style>

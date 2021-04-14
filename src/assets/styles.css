@@ -1,0 +1,80 @@
+:root {
+    --camel:#aa8f66;
+    --subCamel: #705b3b;
+    --Orange: #ed9b40;
+    --Antique: #ffeedb;
+    --Ocean: #61c9a8;
+    --Raspberry: #ba3b46;
+
+    --MainTextColor: rgb(36, 36, 36);
+    --vhHeight: window.innerWidth;
+}
+
+html {
+    background-color: var(--Antique);
+}
+
+#app {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: var(--MainTextColor);
+    margin: 0 5% 0 5%;
+  }
+  
+#nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+#nav #title {
+    font-weight: bolder;
+    font-size: x-large;
+
+    color:var(--camel);
+}
+
+#nav-link {
+    display: flex;
+    justify-content: space-between;
+}
+
+#nav a {
+    font-weight: bold;
+    text-decoration: none;
+    padding-left: 12px;
+    
+    color: var(--subCamel);
+}
+
+#nav a.router-link-exact-active {
+    color: var(--camel);
+}
+
+.firstPage {
+    display: flex;
+    align-items: center;
+    height: 85vh;
+    width: 90vw;
+
+}
+
+#jobTitle {
+    padding-left: 5%;
+}
+
+@media screen and (max-width: 800px) {
+    #app {
+        margin: 0;
+    }
+
+    #nav {
+        flex-direction: column;
+    }
+
+    #nav a {
+        padding:0;
+    }
+}
